@@ -1,16 +1,30 @@
+:root {
+  --pink: #ff79c6;
+  --background: #282a36;
+  --purple: #bd93f9;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: monospace; /* -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
 }
 
 a {
   color: inherit;
-  text-decoration: none;
+
+  background-color: none;
+  
+}
+
+a[href] {
+  color: var(--pink);
 }
 
 * {
   box-sizing: border-box;
+  color: white;
+  background-color: var(--background);
 }

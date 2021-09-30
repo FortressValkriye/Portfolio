@@ -1,0 +1,37 @@
+[
+    {
+        "name":"Echidna Code Editor",
+        "description":"A desktop code editor made as a drop-in replacement for VSCode",
+        "devStatus":[
+            "Prototyping",
+            "Pre-MVP Early Development"
+        ],
+        "website":"https://github.com/EchidnaHQ/Echidna"
+    },
+    {
+        "name":"battlelog.js",
+        "description":"An API wrapper for Battlefield Battlelog.",
+        "devStatus":[
+            "MVP"
+        ],
+        "website":"https://github.com/BLThunderstorm/battlelog.js"
+    },
+    {
+        "name":"BLThunderstorm",
+        "description":"An unofficial gaming statistic tracker",
+        "devStatus":[
+            "Paused development", 
+            "Prototyping"
+        ],
+        "website":"https://github.com/BLThunderstorm/BLThunderstorm"
+    },
+    {
+        "name":"Project Fortress",
+        "description":"A multi-purpose Discord bot",
+        "devStatus":[
+            "MVP",
+            "Archived"
+        ],
+        "website":"https://github.com/Nefoarchive/Fortress1.0"
+    }
+]
