@@ -5,9 +5,7 @@ const path = require("path");
  */
 module.exports = {
   reactStrictMode: true,
-  experimental: {
-    externalDir: true,
-  },
+
   webpack: (config) => {
     config = {
       ...config,
