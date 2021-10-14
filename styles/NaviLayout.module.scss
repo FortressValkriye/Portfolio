@@ -1,0 +1,66 @@
+#navi-drawer-container {
+    position: fixed;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    
+
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+
+    .navi-drawer {
+        position: relative;
+        
+        overflow: hidden;
+        background-color: var(--bg-light);
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        * {
+            background-color: unset;
+        }
+
+        .content {
+            font-size: 1.25rem;
+        }
+
+        .content-list {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        
+        
+    }
+
+
+}
+
+
+.menu-button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1;
+
+}
+
+.navi-focus-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    opacity: 50%;
+
+
+
+}
