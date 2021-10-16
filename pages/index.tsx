@@ -2,6 +2,44 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import projects from "~/assets/projects.json";
+import socials from "~/assets/socials.json";
+import Layout from "~/components/layout";
+import { Icon } from "@icons-pack/react-simple-icons";
+import { techStacks } from "~/assets/tech.json";
+
+interface Project {
+  name: string;
+  description: string;
+  website: string;
+  devStatus: string[];
+  techStack: string[];
+}
+export function Project(props: { project: Project }) {
+  return (
+    <div key={props.project.name}>
+      <h3 className={styles["title"]}>
+        <a id={props.project.name} href={"#" + props.project.name}>
+          {props.project.name}
+        </a>{" "}
+      </h3>
+      <p>{props.project.description}</p>
+      <p>
+        {props.project.techStack.map((stack) => (
+          <i className={`si si-${stack}`}></i>
+        ))}
+      </p>
+      <p>
+        {props.project.devStatus.map((status) => (
+          <span className={styles["status-line"]}> {status} </span>
+        ))}
+      </p>
+      <p>
+        <a href={props.project.website}> Website URL </a>
+      </p>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -39,26 +77,16 @@ export default function Home() {
 
         </div>
         <div className={`${styles["page-box"]} ${styles["projects-box"]}`}>
-          
-          <h2 className={styles["title"]}>My Projects</h2>
-<div className={styles["list"]}>
-        {
-          projects.map((project) => (
-              <div>
-                <h3 className={styles["title"]}> { project.name } </h3>
-                <p>
-                  { project.description }
-                </p>
-                <p>
-                  { project.devStatus.join(" | ") }
-                </p>
-                <p>
-                  <a href={project.website}> Website URL </a>
-                </p>
-              </div>
-            ))
-        }
-</div>
+          <h2 className={styles["title"]}>
+            <a id="my-projects" href="#my-projects">
+              My Projects
+            </a>
+          </h2>
+          <div className={styles["list"]}>
+            {projects.map((project) => (
+              <Project project={project} />
+            ))}
+          </div>
         </div>
       </main>
 

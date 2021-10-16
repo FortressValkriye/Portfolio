@@ -1,12 +1,15 @@
 [
     {
-        "name":"Echidna Code Editor",
-        "description":"A desktop code editor made as a drop-in replacement for VSCode",
-        "devStatus":[
-            "Prototyping",
-            "Pre-MVP Early Development"
+        "name":"gtksourceview-rs",
+        "description":"A Rust binding for the GtkSourceView library.",
+        "techStack":[
+            "gnome",
+            "rust"
         ],
-        "website":"https://github.com/EchidnaHQ/Echidna"
+        "website":"https://github.com/EchidnaHQ/sourceview",
+        "devStatus":[
+            "In Progress"
+        ]
     },
     {
         "name":"battlelog.js",
@@ -14,7 +17,13 @@
         "devStatus":[
             "MVP"
         ],
-        "website":"https://github.com/BLThunderstorm/battlelog.js"
+        "website":"https://github.com/BLThunderstorm/battlelog.js",
+        "techStack":[
+            "typescript",
+            "rollupdotjs",
+            "axios"
+            
+        ]
     },
     {
         "name":"BLThunderstorm",
@@ -23,7 +32,13 @@
             "Paused development", 
             "Prototyping"
         ],
-        "website":"https://github.com/BLThunderstorm/BLThunderstorm"
+        "website":"https://github.com/BLThunderstorm/BLThunderstorm",
+        "techStack":[
+            "nextdotjs",
+            "typescript",
+            "react",
+            "sass"
+        ]
     },
     {
         "name":"Project Fortress",
@@ -32,6 +47,9 @@
             "MVP",
             "Archived"
         ],
-        "website":"https://github.com/Nefoarchive/Fortress1.0"
+        "website":"https://github.com/Nefoarchive/Fortress1.0",
+        "techStack":[
+            "nodedotjs"
+        ]
     }
 ]

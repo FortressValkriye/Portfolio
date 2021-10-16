@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.15.5
+  '@icons-pack/react-simple-icons': ^4.6.1
   '@types/node': ^16.10.2
   '@types/react': ^17.0.26
   article-api: ^1.0.6
@@ -12,6 +13,7 @@ specifiers:
   typescript: ^4.4.3
 
 dependencies:
+  '@icons-pack/react-simple-icons': 4.6.1_react@17.0.2
   article-api: 1.0.6
   next: 11.1.2_117b0a1dfe852bf4fed482051ff5cfc9
   react: 17.0.2
@@ -295,6 +297,15 @@ packages:
 
   /@hapi/hoek/9.2.1:
     resolution: {integrity: sha512-gfta+H8aziZsm8pZa0vj04KO6biEiisppNgA1kbJvFrrWu9Vm7eaUEy76DIxsuTaWvti5fkJVhllWc6ZTE+Mdw==}
+    dev: false
+
+  /@icons-pack/react-simple-icons/4.6.1_react@17.0.2:
+    resolution: {integrity: sha512-ICONbofFzeTkXvmbnptDv4P9cqtW/N/8EFOqyzJQJ80b8fJoLzqhM7EKslBmWziIwjY9FBnOoL2ofzQOoDG1Gg==}
+    peerDependencies:
+      react: ^16.13 || ^17
+    dependencies:
+      prop-types: 15.7.2
+      react: 17.0.2
     dev: false
 
   /@napi-rs/triples/1.0.3:
@@ -1731,6 +1742,14 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /public-encrypt/4.0.3:
     resolution: {integrity: sha512-zVpa8oKZSz5bTMTFClc1fQOnyyEzpl5ozpi1B5YcvBrdohMjH2rfsBtyXcuNuwjsDIXmBYlF2N5FlJYhR29t8Q==}
     dependencies:
@@ -1840,6 +1859,10 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-is/17.0.2:
