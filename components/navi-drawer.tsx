@@ -1,11 +1,13 @@
 import styles from "~/styles/NaviLayout.module.scss";
 import Link from "next/link";
 import { Component } from "react";
-
+import SettingsPopup from "./settings-popup";
 interface NaviDrawerProps {}
 
 interface NaviDrawerState {
   opened: boolean;
+  isJustOpened: boolean;
+  isSettingsPopupOpened: boolean;
 }
 
 export default class NaviDrawer extends Component<
@@ -15,7 +17,11 @@ export default class NaviDrawer extends Component<
   constructor(props) {
     super(props);
 
-    this.state = { opened: false };
+    this.state = {
+      opened: false,
+      isJustOpened: false,
+      isSettingsPopupOpened: false,
+    };
 
     /*
 
@@ -33,16 +39,27 @@ export default class NaviDrawer extends Component<
   close() {
     document.getElementById(styles["navi-drawer-container"]).style.width =
       "0rem";
-    setTimeout(() => this.setState({ opened: false }), 300);
+    setTimeout(
+      () => this.setState({ opened: false, isJustOpened: false }),
+      300
+    );
   }
 
   open() {
     this.setState({ opened: true });
+
+    setTimeout(() => this.setState({ isJustOpened: true }), 0);
   }
 
   render() {
     return (
       <div>
+        {this.state.isSettingsPopupOpened ? (
+          <SettingsPopup
+            onClose={() => this.setState({ isSettingsPopupOpened: false })}
+          />
+        ) : null}
+
         <div
           onClick={!this.state.opened ? this.open : null}
           className={`${styles["menu-button"]} material-icons`}
@@ -56,10 +73,20 @@ export default class NaviDrawer extends Component<
               onClick={this.close}
               className={`${styles["navi-focus-box"]}`}
             ></div>
-            <div id={styles["navi-drawer-container"]}>
+            <div
+              id={styles["navi-drawer-container"]}
+              className={this.state.isJustOpened ? styles["just-opened"] : null}
+            >
               <div className={styles["navi-drawer"]}>
-              <div className={`${styles["icon-list"]} ${styles["content"]}`}>
-                  <div className="material-icons">settings</div>
+                <div className={`${styles["icon-list"]} ${styles["content"]}`}>
+                  <div
+                    className={`material-icons ${styles["settings-button"]}`}
+                    onClick={() =>
+                      this.setState({ isSettingsPopupOpened: true })
+                    }
+                  >
+                    settings
+                  </div>
                 </div>
                 <div></div>
                 <div
