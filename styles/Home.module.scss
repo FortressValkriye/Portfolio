@@ -100,26 +100,17 @@
   }
 }
 
-.projects-box {
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .list {
-            font-size: 1.5rem;
-            width: calc(100% - 10rem);
-          
-            .title {
-                color: var(--purple);
-            }
-        }
-
-        .title {
-            color: var(--pink);
-            font-size: 2rem;
-        }
-
-    
+.social-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  a[href] {
+    color: var(--purple);
+    font-size: 1.5rem;
+  }
 }
 
 @media (orientation: landscape){
