@@ -95,10 +95,10 @@ export default function Home() {
               My Tech Stacks
             </a>
           </h2>
-          <p  className={styles["tech-stack-list"]}>
+          <p className={styles["tech-stack-list"]}>
             {" "}
             {techStacks.map((stack) => (
-              <i className={`si si-${stack}`}/>
+              <i className={`si si-${stack}`} />
             ))}
           </p>
         </div>
@@ -114,14 +114,18 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-      <p>
-          Created with ♥️ by FortressValkyrie
-	  </p>
-        
-      </footer>
+        <div className={`${styles["page-box"]} ${styles["social-box"]}`}>
+          <h2>Get in touch with me</h2>
+          <div>
+            {socials.map((social) => (
+              <div key={social.name}>
+                <a href={social.url}> {social.name} </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
     </div>
-  )
+  );
 }
