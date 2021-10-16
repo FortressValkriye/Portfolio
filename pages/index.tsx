@@ -60,14 +60,32 @@ export default function Home() {
         </div>
         <div className={`${styles["page-box"]} ${styles["about-me"]}`}>
           <div className={`${styles["content"]} ${styles["side"]}`}>
-            <h2 className={styles["title"]}>
-              About Me
-            </h2>
+            <h2 className={styles["title"]}>About Me</h2>
             <p>
-              Heya, I am one of those kids who have been learning to code since childhood. I first learned to code , and I mastered my first language, JavaScript, at the age of 12 (I'm 13 now). Now, I dive into the deeps of web and desktop application development.  
+              Heya, I'm Fortress, some people call me 'Nefo'. I'm a self-taught
+              web developer. I've been doing this for quite some months and I am
+              eager to learn more (impostor syndrome)!
             </p>
+            <p></p>
+          </div>
+          <div className={styles["side"]}></div>
+        </div>
+        <div
+          className={`${styles["page-box"]} ${styles["open-source"]} ${styles["about-me"]}`}
+        >
+          <div className={`${styles["side"]}`}>
+            <p></p>
+          </div>
+          <div className={`${styles["content"]} ${styles["side"]}`}>
+            <h2 className={styles["title"]}>Open Source</h2>
             <p>
-
+              I'm a big fan of Linux and open source. Even this very website is
+              open source under the copyleft GPLv3 license and{" "}
+              <a href="https://github.com/FortressValkyrie/Portfolio">
+                its source code is available on GitHub
+              </a>
+              . Open source is a great way for individuals to share their
+              passion, with doing it for everyone's benefit.
             </p>
           </div>
         </div>
