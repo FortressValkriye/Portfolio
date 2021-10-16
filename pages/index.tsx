@@ -70,10 +70,19 @@ export default function Home() {
 
             </p>
           </div>
-          <div className={styles["side"]}>
-
-          </div>
-
+        </div>
+        <div className={`${styles["tech-stacks"]}`}>
+          <h2>
+            <a id="my-tech-stacks" href="#my-tech-stacks">
+              My Tech Stacks
+            </a>
+          </h2>
+          <p  className={styles["tech-stack-list"]}>
+            {" "}
+            {techStacks.map((stack) => (
+              <i className={`si si-${stack}`}/>
+            ))}
+          </p>
         </div>
         <div className={`${styles["page-box"]} ${styles["projects-box"]}`}>
           <h2 className={styles["title"]}>

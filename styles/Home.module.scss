@@ -1,40 +1,83 @@
 
+.tech-stacks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--red);
+
+  position: relative;
+
+  * {
+    background-color: unset;
+  }
+
+  .tech-stack-list {
+    display: flex;
+
+    i {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+
 
 .intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-overflow: clip;
+
+  .content {
+    width: calc(100% - 8rem);
+    h1 {
+      line-height: 0.5rem;
+    }
+  }
+
+  h1 {
+    color: var(--pink);
+  }
+
+  h2 {
+    color: var(--purple);
+  }
 }
 
 .page-box {
-    min-height: 100vh;
-    width: 100%;
-}
-
-.footer {
-    
-    background-color: #070707;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 15px;
-    width: 100%;
-    min-height: 100px;
-
-    p {
-        text-decoration: none;
-        background-color: unset;
-       
-    }
+  min-height: 100vh;
+  width: 100%;
 }
 
 .about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5rem;
+  .content {
+    max-width: calc(100% - 4rem);
+
+    .title {
+      color: var(--pink);
+    }
+  }
+}
+
+.projects-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .list {
+    font-size: 1.5rem;
+    width: calc(100% - 4rem);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     font-size: 20px;
     .content {
