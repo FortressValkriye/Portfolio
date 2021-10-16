@@ -44,19 +44,19 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>FortressValkyrie</title>
-        <meta name="description" content="Hi, I'm a programmer and Linux enthusiast." />
+        <meta
+          name="description"
+          content="Hi, I'm a programmer and Linux enthusiast."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <div className={`${styles.intro} ${styles["page-box"]}`}>
-        <div><h1>
-          FortressValkyrie
-        </h1>
-        <h2>
-          Hi, I'm a programmer and Linux enthusiast.
-        </h2>
-        </div>
+          <div className={styles.content}>
+            <h1>FortressValkyrie</h1>
+            <h2>Hi, I'm a programmer and Linux enthusiast.</h2>
+          </div>
         </div>
         <div className={`${styles["page-box"]} ${styles["about-me"]}`}>
           <div className={`${styles["content"]} ${styles["side"]}`}>
