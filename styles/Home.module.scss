@@ -7,9 +7,15 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
   background-color: var(--red);
 
   position: relative;
+
+  h2, a {
+    color: 	#F2F2F2;
+  }
 
   * {
     background-color: unset;
