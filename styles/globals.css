@@ -36,3 +36,8 @@ a[href] {
   color: white;
   background-color: var(--background);
 }
+
+h2 {
+  color: var(--pink);
+  font-size: 2rem;
+}
