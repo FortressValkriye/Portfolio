@@ -113,14 +113,10 @@
   }
 }
 
-@media (orientation: landscape){
-    .about-me {
-        .side {
-            width: 45%;
-        }
+@media (orientation: landscape) {
+  .about-me {
+    .side {
+      width: calc(50% - 4rem);
     }
-    
+  }
 }
-
-
-
