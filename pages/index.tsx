@@ -20,7 +20,7 @@ export function Project(props: { project: Project }) {
         </a>{" "}
       </h3>
       <p>{props.project.description}</p>
-      <p>
+      <p className={styles["project-tech-stacks"]}>
         {props.project.techStack.map((stack) => (
           <i className={`si si-${stack}`}></i>
         ))}
