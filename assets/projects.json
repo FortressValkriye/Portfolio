@@ -1,17 +1,5 @@
 [
     {
-        "name":"gtksourceview-rs",
-        "description":"A Rust binding for the GtkSourceView library.",
-        "techStack":[
-            "gnome",
-            "rust"
-        ],
-        "website":"https://github.com/EchidnaHQ/sourceview",
-        "devStatus":[
-            "In Progress"
-        ]
-    },
-    {
         "name":"battlelog.js",
         "description":"An API wrapper for Battlefield Battlelog.",
         "devStatus":[
