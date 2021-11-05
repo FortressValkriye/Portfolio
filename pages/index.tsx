@@ -2,9 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import projects from "~/assets/projects.json";
 import socials from "~/assets/socials.json";
-import Layout from "~/components/layout";
-import { Icon } from "@icons-pack/react-simple-icons";
-import { techStacks } from "~/assets/tech.json";
+import techStacks from "~/assets/tech.json";
 
 interface Project {
   name: string;
