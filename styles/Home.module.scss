@@ -33,7 +33,7 @@
   justify-content: center;
   flex-direction: column;
   text-overflow: clip;
-
+  background-color: var(--bg-dark);
   .content {
     width: calc(100% - 8rem);
     h1 {
@@ -119,6 +119,7 @@
     color: var(--purple);
     font-size: 1.5rem;
   }
+  background-color: var(--bg-dark);
 }
 
 @media (orientation: landscape) {
