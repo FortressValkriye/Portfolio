@@ -90,7 +90,7 @@ export default function Home() {
         <div className={`${styles["tech-stacks"]}`}>
           <h2>
             <a id="my-tech-stacks" href="#my-tech-stacks">
-              My Tech Stacks
+              My Tech Stack
             </a>
           </h2>
           <p className={styles["tech-stack-list"]}>
