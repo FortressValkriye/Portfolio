@@ -1,5 +1,1 @@
-{
-    "techStacks":[
-        "typescript", "nodedotjs", "react", "sass", "nextdotjs"
-    ]
-}
+["rust", "typescript", "nodedotjs", "react", "sass", "nextdotjs"]

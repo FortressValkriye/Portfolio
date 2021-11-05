@@ -5,7 +5,6 @@
 .layout {
   position: relative;
 
-
   .footer {
     background-color: var(--bg-darker);
     color: white;
@@ -25,7 +24,7 @@
       background-color: unset;
     }
   }
-  
+
   .created-by {
     font-family: Arial;
     font-size: 1.3rem;
@@ -34,5 +33,4 @@
   .just-opened {
     min-height: 100vh;
   }
-
 }
