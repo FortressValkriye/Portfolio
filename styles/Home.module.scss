@@ -88,6 +88,14 @@
       color: var(--purple);
     }
 
+    .project-tech-stacks {
+      display: flex;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+
     .status-line {
       color: var(--green);
       margin-right: 1rem;
