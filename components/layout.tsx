@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <div className={styles["page-content"]}> {children} </div>
 
       <footer className={styles.footer}>
-        <p>Created with <span className={styles["love-emoji"]}>♥️</span> by FortressValkyrie</p>
+        <p className={styles["created-by"]}>Created with <span className={styles["love-emoji"]}>♥️</span> by FortressValkyrie</p>
         <p>Color pallete by the Dracula theme project. Hosted with Vercel.</p>
        
       </footer>
