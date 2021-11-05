@@ -7,6 +7,13 @@
     "website": "https://github.com/EchidnaHQ/Echidna"
   },
   {
+    "name": "battlelog.js",
+    "description": "An API wrapper for Battlefield Battlelog.",
+    "devStatus": ["MVP"],
+    "website": "https://github.com/BLThunderstorm/battlelog.js",
+    "techStack": ["typescript", "rollupdotjs", "axios"]
+  },
+  {
     "name": "BLThunderstorm",
     "description": "An unofficial gaming statistic tracker",
     "devStatus": ["Paused development", "Prototyping"],
