@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>FortressValkyrie</title>
+        <title>Nefo Fortressia</title>
         <meta
           name="description"
           content="Hi, I'm a programmer and Linux enthusiast."
@@ -52,7 +52,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={`${styles.intro} ${styles["page-box"]}`}>
           <div className={styles.content}>
-            <h1>FortressValkyrie</h1>
+            <h1>Nefo Fortressia</h1>
             <h2>Hi, I'm a programmer and Linux enthusiast.</h2>
           </div>
         </div>
@@ -60,9 +60,9 @@ export default function Home() {
           <div className={`${styles["content"]} ${styles["side"]}`}>
             <h2 className={styles["title"]}>About Me</h2>
             <p>
-              Heya, I'm Fortress, some people call me 'Nefo'. I'm a self-taught
-              web developer. I've been doing this for quite some months and I am
-              eager to learn more (impostor syndrome)!
+              Heya, I'm Nefo Fortressia! I'm a self-taught software developer
+              and student. I have been doing this since 2020 and I'm still eager
+              to learn more.
             </p>
             <p></p>
           </div>
@@ -71,9 +71,6 @@ export default function Home() {
         <div
           className={`${styles["page-box"]} ${styles["open-source"]} ${styles["about-me"]}`}
         >
-          <div className={`${styles["side"]}`}>
-            <p></p>
-          </div>
           <div className={`${styles["content"]} ${styles["side"]}`}>
             <h2 className={styles["title"]}>Open Source</h2>
             <p>
@@ -82,8 +79,13 @@ export default function Home() {
               <a href="https://github.com/FortressValkyrie/Portfolio">
                 its source code is available on GitHub
               </a>
-              . Open source is a great way for individuals to share their
-              passion, with doing it for everyone's benefit.
+              .
+            </p>
+          </div>
+          <div className={`${styles["side"]}`}>
+            <p>
+              Open source is a great way for individuals to share their passion,
+              with doing it for everyone's benefit.
             </p>
           </div>
         </div>

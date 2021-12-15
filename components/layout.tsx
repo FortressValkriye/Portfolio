@@ -9,8 +9,8 @@ export default function Layout({ children }) {
 
       <footer className={styles.footer}>
         <p className={styles["created-by"]}>
-          Created with <span className={styles["love-emoji"]}>♥️</span> by
-          FortressValkyrie
+          Created with <span className={styles["love-emoji"]}>♥️</span> by Nefo
+          Fortressia
         </p>
         <p>Color pallete by the Dracula theme project. Hosted with Vercel.</p>
       </footer>
