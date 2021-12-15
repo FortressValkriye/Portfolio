@@ -46,7 +46,6 @@ export default function Home() {
           name="description"
           content="Hi, I'm a programmer and Linux enthusiast."
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
