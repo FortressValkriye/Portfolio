@@ -57,9 +57,11 @@
 
 .about-me {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   align-items: center;
   justify-content: center;
-
+  padding: 2rem;
   font-size: 1.5rem;
   .content {
     max-width: calc(100% - 4rem);
@@ -67,6 +69,13 @@
     .title {
       color: var(--pink);
     }
+  }
+
+  :nth-child(1) {
+    text-align: right;
+  }
+  :nth-child(2) {
+    text-align: left;
   }
 }
 
