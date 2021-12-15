@@ -1,10 +1,14 @@
 import styles from "~/styles/Layout.module.scss";
 import NaviDrawer from "./navi-drawer";
-
+import Head from "next/head";
 export default function Layout({ children }) {
   return (
     <div className={styles["layout"]}>
       <NaviDrawer />
+
+      <Head>
+        <link rel="icon" href="favicon.ico" />
+      </Head>
       <div className={styles["page-content"]}> {children} </div>
 
       <footer className={styles.footer}>
