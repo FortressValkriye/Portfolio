@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import projects from "~/assets/projects.json";
-import socials from "~/assets/socials.json";
-import techStacks from "~/assets/tech.json";
+import projects from "~/configs/projects.json";
+import socials from "~/configs/socials.json";
+import techStacks from "~/configs/tech.json";
 import { AboutPage } from "~/components/about";
 interface Project {
   name: string;
