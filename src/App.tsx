@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Parallax pages={4}>
         <ParallaxLayer
-          speed={0.25}
+          speed={0.8}
           factor={3}
           offset={0}
           style={{
@@ -17,24 +17,26 @@ function App() {
               "linear-gradient(50deg, rgba(129,61,156,1) 23%, rgba(192,28,40,1) 62%, rgba(192,28,40,1) 68%, rgba(192,28,40,1) 94%, rgba(192,28,40,1) 96%)",
           }}
         ></ParallaxLayer>
-        <ParallaxLayer
-          speed={0.8}
-          offset={0}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ marginRight: "2rem" }}>
-            <h1>Nefo Fortressia</h1>
-            <h4>they/them</h4>
-          </div>
-          <div style={{ marginLeft: "2rem" }}>
-            <img
-              style={{ borderRadius: "50rem" }}
-              src="https://avatars.githubusercontent.com/u/66000635?s=400&v=4"
-            />
+        <ParallaxLayer speed={0.8} offset={0} horizontal={true}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100vw",
+              height: "100vh",
+            }}
+          >
+            <div style={{ marginRight: "2rem" }}>
+              <h1>Nefo Fortressia</h1>
+              <h4>they/them</h4>
+            </div>
+            <div style={{ marginLeft: "2rem" }}>
+              <img
+                style={{ borderRadius: "50rem" }}
+                src="https://avatars.githubusercontent.com/u/66000635?s=400&v=4"
+              />
+            </div>
           </div>
         </ParallaxLayer>
         <ParallaxLayer
