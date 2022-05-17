@@ -1,5 +1,6 @@
-import { useState } from "react";
-import logo from "./logo.svg";
+import { createRef } from "react";
+import gitSymbolicIcon from "../icons/git-symbolic.svg";
+import mockup from "./mockup.png";
 import "./App.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
@@ -88,8 +89,62 @@ function App() {
             </div>
           </div>
         </ParallaxLayer>
+        <ParallaxLayer speed={0.8} offset={2}>
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",  height: "100vh",
+            zIndex: 3
+          }}>
+          <div style={{width: "25vw"}}>
+            <h1>Echidna Code</h1>
+            <h3>
+              A cross-platform code editor that's designed to be user-friendly.
+              
+              
+            </h3>
+            <p>Designed for the GNOME desktop. Works on all systems.</p>
+            <a style={
+              {
+                color: "white",
+                fontSize: "2rem",
+                textDecoration: "none",
+                fontWeight: 600,
+                display: "flex",
+                alignItems: "center",
+                height: "2rem",
+                paddingTop: "5rem",
+                justifyContent: "center"
+               
+              }
+            } href="https://github.com/fortressia/Echidna/"><img style={
+             { height: "2rem", filter: "invert(100%)", marginRight: "1rem"}
+            }
+            src={gitSymbolicIcon}/><p>Learn More</p></a>
+          </div>
+        
+            <img style={{marginTop: "3.5rem", marginLeft: "2rem"}} src={mockup}/>
+         </div>
+
+
+        </ParallaxLayer>
         <ParallaxLayer
+          speed={4}
           offset={2}
+          factor={2}
+          
+          style={{
+            background:
+              "linear-gradient(193deg, rgba(26,95,180,1) 36%, rgba(26,95,180,1) 39%, rgba(26,95,180,1) 39%, rgba(129,61,156,1) 74%, rgba(129,61,156,1) 90%, rgba(129,61,156,1) 94%, rgba(129,61,156,1) 96%)",
+            backgroundColor: "rgb(26,95,180)",
+            zIndex: -1
+          }}
+        ></ParallaxLayer>
+       
+      
+        <ParallaxLayer
+          offset={3}
+          speed={2}
           style={{
             backgroundColor: "rgb(28,113,216)",
             background:
