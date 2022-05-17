@@ -10,10 +10,11 @@ function App() {
       <Parallax pages={4}>
         <ParallaxLayer
           speed={0.8}
-          factor={3}
+          factor={4.5}
           offset={0}
           style={{
             backgroundColor: "rgb(129,61,156)",
+            zIndex: -1,
             background:
               "linear-gradient(50deg, rgba(129,61,156,1) 23%, rgba(192,28,40,1) 62%, rgba(192,28,40,1) 68%, rgba(192,28,40,1) 94%, rgba(192,28,40,1) 96%)",
           }}
@@ -43,8 +44,9 @@ function App() {
         <ParallaxLayer
           style={{
             display: "flex",
-
+          
             justifyContent: "center",
+            alignItems: "center",
           }}
           offset={1}
           speed={1.5}
