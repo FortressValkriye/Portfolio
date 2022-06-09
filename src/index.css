@@ -21,8 +21,18 @@ body {
 @layer base {
   h1 {
     @apply text-2xl font-bold;
+    
   }
   h2 {
     @apply text-xl font-bold;
+  }
+
+  details {
+    @apply m-6 border-solid rounded-md;
+    @apply text-lg;
+
+    summary {
+      @apply text-2xl flex;
+    }
   }
 }

@@ -1,9 +1,14 @@
 import { createRef } from "react";
-import gitSymbolicIcon from "../icons/git-symbolic.svg";
+import github from "../icons/github.svg";
+import mastodon from "../icons/mastodon.svg";
+import twitter from "../icons/twitter.svg";
+import devdotto from "../icons/devdotto.svg";
+import profilePicture from "./favicon.png";
+import flatpak from "../icons/flatpak.png";
+import gtk from "../icons/gtk.svg";
 import mockup from "./mockup.png";
 import "./App.css";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
-import React from "react";
 
 function App() {
   const ref = createRef<IParallax>();
@@ -13,29 +18,31 @@ function App() {
   return (
     <div className="App">
 
-      <Parallax pages={4} ref={ref}>
+      <Parallax pages={5} ref={ref}>
+     
         <ParallaxLayer
           speed={0.8}
-          factor={4.5}
+          factor={5}
           offset={0}
-          className="bg-[rgb(129,61,156)] z-[-1]"
+          className="bg-[rgb(129,61,156)] z-[-3]"
           style={{
             background:
               "linear-gradient(50deg, rgba(129,61,156,1) 23%, rgba(192,28,40,1) 62%, rgba(192,28,40,1) 68%, rgba(192,28,40,1) 94%, rgba(192,28,40,1) 96%)",
           }}
         ></ParallaxLayer>
+   
         <ParallaxLayer speed={0.8} offset={0} horizontal={true} className="w-screen ">
           <div
             className="flex place-content-center w-screen h-screen"
 
           >
             <div className="mr-8 flex place-content-center flex-col">
-              <h1>Nefo Fortressia</h1>
-              <h4>they/them</h4>
+              <h1 className="text-3xl">Nefo Fortressia</h1>
+              <h4>Principal Engineer at EchidnaHQ</h4>
             </div>
             <div className="flex items-center ">
               <img className="mr-8 h-100 rounded-full"
-                src="https://avatars.githubusercontent.com/u/66000635?s=400&v=4"
+                src={profilePicture}
               />
             </div>
           </div>
@@ -45,86 +52,105 @@ function App() {
           offset={1}
           speed={1.5}
         >
-          <div className="text-center">
+          <div className="text-center text-lg">
             <h2 className="text-2xl">
-              Hiii!! I'm a developer working with Rust and the Linux desktop
-              ecosystem
+              Hiii!! 👋👋 I'm a developer working with Rust 🦀 and the Linux 🐧🐧 desktop
+              ecosystem 
             </h2>
             <p>
-              Be it GTK, Flatpak, Freedesktop specifications. If you got
-              anything to do with Linux app development, just handle it to me.
+              Be it GTK, Libadwaita, Flatpak, Freedesktop SDK.  If you got
+              anything lovelyy with Linux app development, just handle it to mee!! 😘😘
             </p>
 
             <div className="flex place-content-center">
               <img
                 className="h-20"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg"
+                src={gtk}
               />
               <img
                 className="h-20"
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flatpak_logo.png"
+                src={flatpak}
               />
             </div>
             <p>
-              Not only that, but I also do web technologies as well. Though...
-              less frequently.
+              Not only that!! I alsoo do web devv too! 🥰🥰
             </p>
             <div className="h-1 relative">
 
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer speed={0.8} offset={2}>
-          <div style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center", height: "100vh",
-            zIndex: 3
-          }}>
-            <div style={{ width: "25vw" }}>
-              <h1>Echidna Code</h1>
+        <ParallaxLayer speed={3} offset={2} className="relative w-screen h-screen z-8 flex place-items-center">
+      
+            <div style={{ width: "25vw" }} className="absolute left-16">
+              <span className="mb-16">
+
+              <h1 className="text-4xl font-semibold">Writee cutee codee 🥰🥰</h1>
+              <h2 className="text-2xl">Painlessly. Beautifullyy 💖✨</h2>
+              </span>
+
               <h3>
-                A cross-platform code editor that's designed to be user-friendly.
-
-
+               <span className="font-bold">Echidna Code</span> is a code editor more lovelyy than your existing one. Awww! 😍😍
               </h3>
-              <p>Designed for the GNOME desktop. Works on all systems.</p>
-              <a className="color-white h-8 pt-20 bold" style={
+              <h3>It keeps you away from most bad experiences in code editors, and it works on most systems!! 💕💕</h3>
+              <a className="color-white h-8 text-xl bold" style={
                 {
                   color: "white",
-                  fontSize: "2rem",
+          
                   textDecoration: "none",
 
 
 
                 }
-              } href="https://github.com/fortressia/Echidna/"><img style={
-                { height: "2rem", filter: "invert(100%)", marginRight: "1rem" }
-              }
-                src={gitSymbolicIcon} /><p>Learn More</p></a>
+              } href="https://github.com/fortressia/Echidna/"><p>Learn More 👋</p></a>
             </div>
 
-            <img style={{ marginTop: "3.5rem", marginLeft: "2rem" }} src={mockup} />
-          </div>
-
+           
 
         </ParallaxLayer>
+     
+        <ParallaxLayer speed={2} offset={2} horizontal={false} className="z-50 relative h-screen w-screen">
+                  <img className="absolute top-2 right-9 h-[100vh - 2rem]" src={mockup} />
+
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0.8} className="grid place-items-center">
+        <div className="w-[80vw]">
+          <h1 className="text-center text-4xl">{ "AMAA 😍😍" }</h1>
+        <details>
+            <summary>
+              <h1>What are your pronouns?</h1>
+            </summary>
+            <p>
+              I go with the they/them pronouns!! 🥰🥰 I'm not really an enby, but I prefer that for some personal reasons! ^^
+            </p>
+          </details>
+          <details>
+            <summary>
+              <h1>
+                What are your interests aside from programming?
+              </h1>
+          
+          </summary>
+          I like reading novels and writing storiess! When I'm bored, I usually playy Genshin Impact and Minecraftt! They're very fun!! ^^
+          </details>
+
+          <details>
+            <summary>
+              What sort of novelss do you likee?
+            </summary>
+
+            I loveer novels with girlss as MC with a feminime theme. I'm not really into boys' thingiees. ^^
+          </details>
+          <details>
+            <summary>{ 'I lovee you sooo much 😍😍 <3' }</summary>
+
+            I loveee you tooo!! 🥰🥰🥰💖💖✨✨
+          </details>
+        </div>
+         
+        </ParallaxLayer>
         <ParallaxLayer
-          speed={4}
-          offset={2}
-          factor={2}
-
-          style={{
-            background:
-              "linear-gradient(193deg, rgba(26,95,180,1) 36%, rgba(26,95,180,1) 39%, rgba(26,95,180,1) 39%, rgba(129,61,156,1) 74%, rgba(129,61,156,1) 90%, rgba(129,61,156,1) 94%, rgba(129,61,156,1) 96%)",
-            backgroundColor: "rgb(26,95,180)",
-            zIndex: -1
-          }}
-        ></ParallaxLayer>
-
-
-        <ParallaxLayer
-          offset={3}
+          offset={4}
           speed={2}
           style={{
             backgroundColor: "rgb(28,113,216)",
@@ -132,14 +158,28 @@ function App() {
               "linear-gradient(50deg, rgba(28,113,216,1) 28%, rgba(32,132,195,1) 34%, rgba(46,194,126,1) 66%, rgba(46,194,126,1) 68%, rgba(46,194,126,1) 94%, rgba(46,194,126,1) 96%)",
           }}
         ></ParallaxLayer>
-      </Parallax>
-      <div className="fixed space-y-4 right-4 top-4 color-white write-vertical-right flex-row place-items-center flex" >
-        <a href="#" onClick={() => { ref.current?.scrollTo(0) }}><img  className="h-16 rounded-full" src="https://avatars.githubusercontent.com/u/66000635?s=400&v=4"></img></a>
-        <a href="#about" onClick={() => { ref.current?.scrollTo(1) }}>About</a>
-        <a href="#echidna" className="mb-2" onClick={() => { ref.current?.scrollTo(2) }}>Echidna</a>
-        <a href="#ama" onClick={() => { ref.current?.scrollTo(3) }}>Ask Me Anything</a>
-        <a href="#contact" onClick={() => { ref.current?.scrollTo(4) }}>Contact</a>
+        <ParallaxLayer offset={4} speed={0.5} className="grid place-items-center">
+          <h1 className="text-4xl">Find me in my socials</h1>
+          <div className="flex space-x-2 h-5 ">
+            <a href="https://twitter.com/NefoFortressia" target="_blank"><img className="h-10" src={twitter}/>
+          </a>
+          <a href="https://github.com/fortressia" target="_blank"><img className="h-10" src={github}/></a>
+          
+          <a href="https://mastodon.technology/fortressia" target="_blank"><img className="h-10" src={mastodon}/></a>
+          
+          <a href="https://dev.to/fortressia" target="_blank"><img className="h-10" src={devdotto}/></a>
+          </div>
+        </ParallaxLayer>
        
+      </Parallax>
+      <div className="fixed font-semibold space-y-4 right-4 top-4 color-white write-vertical-right flex-row place-items-center flex" >
+        <a href="#" onClick={() => { ref.current?.scrollTo(0) }}><img className="h-16 rounded-full" src={profilePicture}></img></a>
+        <a href="#about" onClick={() => { ref.current?.scrollTo(1) }}>About Mee</a>
+        <a href="#echidna" className="mb-2" onClick={() => { ref.current?.scrollTo(2) }}>Echidna Code</a>
+        <a href="#ama" onClick={() => { ref.current?.scrollTo(3) }}> { "AMAA >>//<<" }</a>
+        <a href="#contact" onClick={() => { ref.current?.scrollTo(4) }}>Socialss</a>
+        <a href="https://fortressia.substack.com" target="_blank">Newsletter</a>
+          
       </div>
     </div>
   );
