@@ -87,27 +87,19 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer speed={3} offset={2} className="relative w-screen h-screen z-20 flex place-items-center">
 
-          <div className="absolute p-8 pr-18 lg:left-8 lg:w-[35vw]">
+          <div className="absolute p-8 pr-18 lg:left-8 lg:w-[35vw] space-y-8">
             <span className="mb-16">
-
               <h1 className="text-4xl font-semibold">Writee cutee codee 🥰🥰</h1>
               <h2 className="text-2xl">Painlessly. Beautifullyy 💖✨</h2>
             </span>
+            <span>
+              <h3>
+                <span className="font-bold">Echidna Code</span> is an in-development code editor more lovelyy than your existing one. Awww! 😍😍
+              </h3>
+              <h3>It keeps you away from most bad experiences in code editors, and it works on most systems!! 💕💕</h3>
+            </span>
 
-            <h3>
-              <span className="font-bold">Echidna Code</span> is a code editor more lovelyy than your existing one. Awww! 😍😍
-            </h3>
-            <h3>It keeps you away from most bad experiences in code editors, and it works on most systems!! 💕💕</h3>
-            <a className="color-white h-8 text-xl bold" style={
-              {
-                color: "white",
-
-                textDecoration: "none",
-
-
-
-              }
-            } href="https://github.com/fortressia/Echidna/"><p>Learn More 👋</p></a>
+            <a className="color-white h-8 text-xl bold no-underline" href="https://github.com/fortressia/Echidna/"><p>Coming Soon 👋</p></a>
           </div>
 
 
@@ -120,10 +112,10 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0.8} className="grid place-items-center">
           <div className="w-[80vw]">
-            <h1 className="text-center text-4xl">{"AMAA 😍😍"}</h1>
+            <h1 className="text-center text-4xl">{"Ask Mee Aanythiingg!! 😍😍"}</h1>
             <details>
               <summary>
-                <h1>What are your pronouns?</h1>
+                <h1>What aree your lovelyy pronouns?</h1>
               </summary>
               <p>
                 I go with the they/them pronouns!! 🥰🥰 I'm not really an enby, but I prefer that for some personal reasons! ^^
@@ -141,10 +133,10 @@ function App() {
 
             <details>
               <summary>
-                What sort of novelss do you likee?
+                What sort of novels do you likee?
               </summary>
 
-              I loveer novels with girlss as MC with a feminime theme. I'm not really into boys' thingiees. ^^
+              I lovee novels with girlss as MC with a feminime theme. I'm not really into boys' thingiees. ^^
             </details>
             <details>
               <summary>{'I lovee you sooo much 😍😍 <3'}</summary>
