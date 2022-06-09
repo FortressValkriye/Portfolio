@@ -2,12 +2,18 @@ import { createRef } from "react";
 import gitSymbolicIcon from "../icons/git-symbolic.svg";
 import mockup from "./mockup.png";
 import "./App.css";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
+import React from "react";
 
 function App() {
+  const ref = createRef<IParallax>();
+
+  // @ts-ignore
+  window.ref = ref;
   return (
     <div className="App">
-      <Parallax pages={4}>
+
+      <Parallax pages={4} ref={ref}>
         <ParallaxLayer
           speed={0.8}
           factor={4.5}
@@ -35,12 +41,12 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          className="flex place-content-center"
+          className="grid place-content-center"
           offset={1}
           speed={1.5}
         >
           <div className="text-center">
-            <h2>
+            <h2 className="text-2xl">
               Hiii!! I'm a developer working with Rust and the Linux desktop
               ecosystem
             </h2>
@@ -127,6 +133,14 @@ function App() {
           }}
         ></ParallaxLayer>
       </Parallax>
+      <div className="fixed space-y-4 right-4 top-4 color-white write-vertical-right flex-row place-items-center flex" >
+        <a href="#" onClick={() => { ref.current?.scrollTo(0) }}><img  className="h-16 rounded-full" src="https://avatars.githubusercontent.com/u/66000635?s=400&v=4"></img></a>
+        <a href="#about" onClick={() => { ref.current?.scrollTo(1) }}>About</a>
+        <a href="#echidna" className="mb-2" onClick={() => { ref.current?.scrollTo(2) }}>Echidna</a>
+        <a href="#ama" onClick={() => { ref.current?.scrollTo(3) }}>Ask Me Anything</a>
+        <a href="#contact" onClick={() => { ref.current?.scrollTo(4) }}>Contact</a>
+       
+      </div>
     </div>
   );
 }
