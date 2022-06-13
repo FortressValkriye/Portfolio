@@ -7,18 +7,19 @@
  */
 
 import { createRef } from "react";
-import github from "../icons/github.svg";
-import mastodon from "../icons/mastodon.svg";
-import twitter from "../icons/twitter.svg";
-import devdotto from "../icons/devdotto.svg";
-import profilePicture from "./favicon.png";
-import flatpak from "../icons/flatpak.png";
-import gtk from "../icons/gtk.svg";
+import github from "../../icons/github.svg";
+import mastodon from "../../icons/mastodon.svg";
+import twitter from "../../icons/twitter.svg";
+import devdotto from "../../icons/devdotto.svg";
+import profilePicture from "../../renderer/logo.png";
+import flatpak from "../../icons/flatpak.png";
+import gtk from "../../icons/gtk.svg";
 import mockup from "./mockup.png";
-import "./App.css";
-import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-function App() {
+import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
+import React from "react";
+
+export default function Portfolio() {
   const ref = createRef<IParallax>();
 
   // @ts-ignore
@@ -182,4 +183,3 @@ function App() {
   );
 }
 
-export default App;

@@ -12,10 +12,26 @@ import { defineConfig } from 'windicss/helpers'
 export default defineConfig({
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./{renderer,pages}/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+
+    extend: {
+      backgroundColor: {
+        dark: '#242424',
+        light: '#fafafa'
+      },
+      colors: {
+        'blue': {
+          100: '#99c1f1',
+          200: '#62a0ea',
+          300: '#3584e4',
+          400: '#1c71d8',
+
+        }
+
+      },
+    },
   },
   plugins: [],
 })
