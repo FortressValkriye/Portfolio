@@ -16,18 +16,15 @@ export default function ParallaxPage() {
 
     // @ts-ignore
     window.ref = ref;
-    return (<div>
+    return (<div >
         <Parallax pages={5} ref={ref} >
 
             <ParallaxLayer
                 speed={0.8}
                 factor={5}
                 offset={0}
-                className="bg-[rgb(129,61,156)] z-[-3]"
-                style={{
-                    background:
-                        "linear-gradient(50deg, rgba(129,61,156,1) 23%, rgba(192,28,40,1) 62%, rgba(192,28,40,1) 68%, rgba(192,28,40,1) 94%, rgba(192,28,40,1) 96%)",
-                }}
+                className="background-gradient z-[-3]"
+                 
             ></ParallaxLayer>
 
             <ParallaxLayer speed={0.8} offset={0} horizontal={true} >
@@ -148,7 +145,7 @@ export default function ParallaxPage() {
             ></ParallaxLayer>
             <ParallaxLayer offset={4} speed={0.5} className="flex justify-center items-center flex-col space-y-8 pr-12 p-8">
                 <h1 className="text-4xl">Find me in my socials</h1>
-                <div className="flex space-x-2 h-5 ">
+                <div className="flex space-x-2 h-5 invert">
                     <a href="https://twitter.com/NefoFortressia" target="_blank"><img className="h-10" src={twitter} />
                     </a>
                     <a href="https://github.com/fortressia" target="_blank"><img className="h-10" src={github} /></a>

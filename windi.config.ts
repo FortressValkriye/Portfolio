@@ -10,6 +10,7 @@
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
+    darkMode: "class",
     content: [
         "./{renderer,pages}/**/*.{vue,js,ts,jsx,tsx}",
     ],

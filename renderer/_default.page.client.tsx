@@ -13,6 +13,12 @@ async function hydrate() {
   // instead of `getPage()`, see https://vite-plugin-ssr.com/useClientRouter
   const pageContext = await getPage<PageContextBuiltInClient & PageContext>()
   const { Page, pageProps } = pageContext
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+    document.documentElement.classList.add('dark')
+  else
+    document.documentElement.classList.add('light')
+
+
   ReactDOM.hydrate(
     <PageShell pageContext={pageContext}>
       <Page {...pageProps} />

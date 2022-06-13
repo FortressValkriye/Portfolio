@@ -25,6 +25,16 @@ body {
   color: #ffffff;
 }
 
+.background-gradient {
+  background: #FFC0CB;
+  background: linear-gradient(38deg, rgba(246,97,81,1) 0%, rgba(251,154,155,1) 21%, rgba(255,192,203,1) 55%, rgba(247,179,207,1) 77%, rgba(220,138,221,1) 100%);
+}
+
+.dark .background-gradient {
+  background: #c63168;
+    background: linear-gradient(38deg, rgba(246, 97, 81, 1) 0%, rgba(198, 49, 104, 1) 21%, rgba(198, 49, 104, 1) 55%, rgba(198, 49, 104, 1) 77%, rgba(220, 138, 221, 1) 100%);
+}
+
 @layer base {
   h1 {
     @apply text-2xl font-bold;
