@@ -1,19 +1,46 @@
-/* This CSS is common to all pages */
+/*
+ * Copyright 2022 Nefo Fortressia and contributors. All Rights Reserved
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
 
 body {
   margin: 0;
-  font-family: sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
+  font-family: 'Cantarell', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.navitem {
-  padding: 3px 10px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-.navitem.is-active {
-  background-color: #eee;
+
+body {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+  details {
+    @apply m-6 border-solid rounded-md;
+    @apply text-lg;
+
+    summary {
+      @apply text-2xl flex;
+    }
+  }
 }
